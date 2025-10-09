@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/07b17419ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--The header contains the nav, page header text, page description and search bar-->
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/icon-sunny.webp" alt="">
+                <h1>TerraSky</h1>
+            </div>
+
+            <div class="w-units">
+                <select name="Units" id="units">
+                    <option value="">Celsius (°C)</option>
+                    <option value="">Fahrenheit (°F)</option>
+                </select>
+            </div>
+        </nav>
+
+        <!--Header text and paragraph-->
+        <div class="header-txt-cont">
+            <h2>Get the latest weather updates</h2>
+            <p>Stay informed about the current weather conditions in your area with our accurate and up-to-date weather app, Developed by <span>WEB DEVELOPMENT GROUP 9, NEW HORIZONS.</span></p>
+        </div>
+
+        <!--Search bar container-->
+        <div class="search-bar-cont">
+            <p>&#128269;</p>
+            <input type="text" id="search-bar" placeholder="Enter city name...">
+            <button id="search-btn">Search</i></button>
+        </div>
+    </header>
+
+    <!--The main contains the weather cover banner, atmosphere, daily forecast, and side section ( Last section in mobile view)-->
+
+    <main>
+        <div class="main-cont">
+            <div class="cont-1">
+
+                <!--web site cover banner is here with the text informations-->
+                <div class="cont-1-txt">
+                    <h1>Berlin, Germany</h1>
+                    <p>Tuesday, August 5, 2025</p>
+                </div>
+
+                <!--This container contains the sun image and the fugure representing the celsius-->
+                <div class="cont-1-num">
+                    <div class="big-sun-img">
+                        <img src="images/icon-sunny.webp" alt="">
+                    </div>
+
+                    <div class="the-figure">
+                        <em><h1>20&deg;</h1></em>
+                    </div>
+                </div>
+            </div>
+
+            <!--Atmosphere conditions are in here-->
+            <div class="cont-2">
+                <div class="cont-2-box-1">
+                    <p>Feels Like</p>
+                    <h2>18&deg;</h2>
+                </div>
+
+                <div class="cont-2-box-1">
+                    <p>Humidity</p>
+                    <h2>46%</h2>
+                </div>
+
+                <div class="cont-2-box-1">
+                    <p>Wind</p>
+                    <h2>14 km/h</h2>
+                </div>
+
+                <div class="cont-2-box-1">
+                    <p>Precipitation</p>
+                    <h2>0 mm</h2>
+                </div>
+            </div>
+
+            <!--this container contains the daily forecast information-->
+            <div class="cont-3">
+                <div class="con3-head-txt">
+                    <p>Daily forecast</p>
+                </div>
+
+                <div class="cont3-box">
+                    <div class="cont3-box-1">
+                       <div class="box-1-txt-1">
+                        <p>Tue</p>
+                       </div>
+
+                       <div class="box-1-cloud">
+                        <img src="images/icon-rain.webp" alt="">
+                       </div>
+
+                       <div class="box-1-txt-2">
+                            <div class="right-txt">
+                                <p>20&deg;</p>
+                            </div>
+
+                            <div class="left-txt">
+                                <p>14&deg;</p>
+                            </div>        
+                       </div>
+                    </div>
+
+                    <div class="cont3-box-1">
+                       <div class="box-1-txt-1">
+                        <p>Wed</p>
+                       </div>
+
+                       <div class="box-1-cloud">
+                        <img src="images/icon-drizzle.webp" alt="">
+                       </div>
+
+                       <div class="box-1-txt-2">
+                            <div class="right-txt">
+                                <p>21&deg;</p>
+                            </div>
+
+                            <div class="left-txt">
+                                <p>15&deg;</p>
+                            </div>        
+                       </div>
+                    </div>
+
+                    <div class="cont3-box-1">
+                       <div class="box-1-txt-1">
+                        <p>Thu</p>
+                       </div>
+
+                       <div class="box-1-cloud">
+                        <img src="images/icon-sunny.webp" alt="">
+                       </div>
+
+                       <div class="box-1-txt-2">
+                            <div class="right-txt">
+                                <p>24&deg;</p>
+                            </div>
+
+                            <div class="left-txt">
+                                <p>14&deg;</p>
+                            </div>        
+                       </div>
+                    </div>
+
+                    <div class="cont3-box-1">
+                       <div class="box-1-txt-1">
+                        <p>Fri</p>
+                       </div>
+
+                       <div class="box-1-cloud">
+                        <img src="images/icon-partly-cloudy.webp" alt="">
+                       </div>
+
+                       <div class="box-1-txt-2">
+                            <div class="right-txt">
+                                <p>25&deg;</p>
+                            </div>
+
+                            <div class="left-txt">
+                                <p>13&deg;</p>
+                            </div>        
+                       </div>
+                    </div>
+
+                    <div class="cont3-box-1">
+                       <div class="box-1-txt-1">
+                        <p>Sat</p>
+                       </div>
+
+                       <div class="box-1-cloud">
+                        <img src="images/icon-storm.webp" alt="">
+                       </div>
+
+                       <div class="box-1-txt-2">
+                            <div class="right-txt">
+                                <p>21&deg;</p>
+                            </div>
+
+                            <div class="left-txt">
+                                <p>15&deg;</p>
+                            </div>        
+                       </div>
+                    </div>
+
+                    <div class="cont3-box-1">
+                       <div class="box-1-txt-1">
+                        <p>Sun</p>
+                       </div>
+
+                       <div class="box-1-cloud">
+                        <img src="images/icon-snow.webp" alt="">
+                       </div>
+
+                       <div class="box-1-txt-2">
+                            <div class="right-txt">
+                                <p>25&deg;</p>
+                            </div>
+
+                            <div class="left-txt">
+                                <p>16&deg;</p>
+                            </div>        
+                       </div>
+                    </div>
+
+                    <div class="cont3-box-1">
+                       <div class="box-1-txt-1">
+                        <p>Mon</p>
+                       </div>
+
+                       <div class="box-1-cloud">
+                        <img src="images/icon-fog.webp" alt="">
+                       </div>
+
+                       <div class="box-1-txt-2">
+                            <div class="right-txt">
+                                <p>24&deg;</p>
+                            </div>
+
+                            <div class="left-txt">
+                                <p>15&deg;</p>
+                            </div>        
+                       </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Container for the Right side section-->
+        <div class="side-cont">
+            <div class="first-box">
+                <div class="first-box-h-txt">
+                    <p>Hourly forecast</p>
+                </div>
+
+                <select name="Select day" id="Select-day">
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Tuesday">Wednesday</option>
+                    <option value="Tuesday">Thursday</option>
+                    <option value="Tuesday">Friday</option>
+                    <option value="Tuesday">Saturday</option>
+                    <option value="Tuesday">Sunday</option>
+                    <option value="Tuesday">Monday</option>
+                </select>
+            </div>
+
+            <div class="sec-box">
+                <div class="time-txt">
+                    <img src="images/icon-overcast.webp" alt="">
+                    <p>3 PM</p>
+                </div>
+
+                <div class="weather-txt">
+                    <p>20&deg;</p>
+                </div>
+            </div>
+
+            <div class="sec-box">
+                <div class="time-txt">
+                    <img src="images/icon-partly-cloudy.webp" alt="">
+                    <p>4 PM</p>
+                </div>
+
+                <div class="weather-txt">
+                    <p>20&deg;</p>
+                </div>
+            </div>
+
+            <div class="sec-box">
+                <div class="time-txt">
+                    <img src="images/icon-sunny.webp" alt="">
+                    <p>5 PM</p>
+                </div>
+
+                <div class="weather-txt">
+                    <p>20&deg;</p>
+                </div>
+            </div>
+
+            <div class="sec-box">
+                <div class="time-txt">
+                    <img src="images/icon-overcast.webp" alt="">
+                    <p>6 PM</p>
+                </div>
+
+                <div class="weather-txt">
+                    <p>19&deg;</p>
+                </div>
+            </div>
+
+            <div class="sec-box">
+                <div class="time-txt">
+                    <img src="images/icon-snow.webp" alt="">
+                    <p>7 PM</p>
+                </div>
+
+                <div class="weather-txt">
+                    <p>18&deg;</p>
+                </div>
+            </div>
+
+            <div class="sec-box">
+                <div class="time-txt">
+                    <img src="images/icon-fog.webp" alt="">
+                    <p>8 PM</p>
+                </div>
+
+                <div class="weather-txt">
+                    <p>18&deg;</p>
+                </div>
+            </div>
+
+            <div class="sec-box">
+                <div class="time-txt">
+                    <img src="images/icon-snow.webp" alt="">
+                    <p>9 PM</p>
+                </div>
+
+                <div class="weather-txt">
+                    <p>17&deg;</p>
+                </div>
+            </div>
+
+            <div class="sec-box">
+                <div class="time-txt">
+                    <img src="images/icon-overcast.webp" alt="">
+                    <p>10 PM</p>
+                </div>
+
+                <div class="weather-txt">
+                    <p>17&deg;</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2025: Web Development Group 9, NEW HORIZONS, NIG.</p>
+    </footer>
+    
+</body>
+</html>
