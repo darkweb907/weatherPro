@@ -41,7 +41,7 @@
         <!--Search bar container-->
         <div class="search-bar-cont">
             <p>&#128269;</p>
-            <input type="text" id="search-bar" placeholder="Enter city name...">
+            <input type="text" id="search" placeholder="Enter city name..." i">
             <button id="search-btn">Search</i></button>
         </div>
     </header>
@@ -50,7 +50,7 @@
 
     <main>
         <div class="main-cont">
-            <div class="cont-1">
+            <div class="cont-1" id="weather-cont">
 
                 <!--web site cover banner is here with the text informations-->
                 <div class="cont-1-txt">
@@ -71,7 +71,7 @@
             </div>
 
             <!--Atmosphere conditions are in here-->
-            <div class="cont-2">
+            <div class="cont-2" id="other-cont">
                 <div class="cont-2-box-1">
                     <p>Feels Like</p>
                     <h2>18&deg;</h2>
@@ -99,146 +99,8 @@
                     <p>Daily forecast</p>
                 </div>
 
-                <div class="cont3-box">
-                    <div class="cont3-box-1">
-                       <div class="box-1-txt-1">
-                        <p>Tue</p>
-                       </div>
-
-                       <div class="box-1-cloud">
-                        <img src="images/icon-rain.webp" alt="">
-                       </div>
-
-                       <div class="box-1-txt-2">
-                            <div class="right-txt">
-                                <p>20&deg;</p>
-                            </div>
-
-                            <div class="left-txt">
-                                <p>14&deg;</p>
-                            </div>        
-                       </div>
-                    </div>
-
-                    <div class="cont3-box-1">
-                       <div class="box-1-txt-1">
-                        <p>Wed</p>
-                       </div>
-
-                       <div class="box-1-cloud">
-                        <img src="images/icon-drizzle.webp" alt="">
-                       </div>
-
-                       <div class="box-1-txt-2">
-                            <div class="right-txt">
-                                <p>21&deg;</p>
-                            </div>
-
-                            <div class="left-txt">
-                                <p>15&deg;</p>
-                            </div>        
-                       </div>
-                    </div>
-
-                    <div class="cont3-box-1">
-                       <div class="box-1-txt-1">
-                        <p>Thu</p>
-                       </div>
-
-                       <div class="box-1-cloud">
-                        <img src="images/icon-sunny.webp" alt="">
-                       </div>
-
-                       <div class="box-1-txt-2">
-                            <div class="right-txt">
-                                <p>24&deg;</p>
-                            </div>
-
-                            <div class="left-txt">
-                                <p>14&deg;</p>
-                            </div>        
-                       </div>
-                    </div>
-
-                    <div class="cont3-box-1">
-                       <div class="box-1-txt-1">
-                        <p>Fri</p>
-                       </div>
-
-                       <div class="box-1-cloud">
-                        <img src="images/icon-partly-cloudy.webp" alt="">
-                       </div>
-
-                       <div class="box-1-txt-2">
-                            <div class="right-txt">
-                                <p>25&deg;</p>
-                            </div>
-
-                            <div class="left-txt">
-                                <p>13&deg;</p>
-                            </div>        
-                       </div>
-                    </div>
-
-                    <div class="cont3-box-1">
-                       <div class="box-1-txt-1">
-                        <p>Sat</p>
-                       </div>
-
-                       <div class="box-1-cloud">
-                        <img src="images/icon-storm.webp" alt="">
-                       </div>
-
-                       <div class="box-1-txt-2">
-                            <div class="right-txt">
-                                <p>21&deg;</p>
-                            </div>
-
-                            <div class="left-txt">
-                                <p>15&deg;</p>
-                            </div>        
-                       </div>
-                    </div>
-
-                    <div class="cont3-box-1">
-                       <div class="box-1-txt-1">
-                        <p>Sun</p>
-                       </div>
-
-                       <div class="box-1-cloud">
-                        <img src="images/icon-snow.webp" alt="">
-                       </div>
-
-                       <div class="box-1-txt-2">
-                            <div class="right-txt">
-                                <p>25&deg;</p>
-                            </div>
-
-                            <div class="left-txt">
-                                <p>16&deg;</p>
-                            </div>        
-                       </div>
-                    </div>
-
-                    <div class="cont3-box-1">
-                       <div class="box-1-txt-1">
-                        <p>Mon</p>
-                       </div>
-
-                       <div class="box-1-cloud">
-                        <img src="images/icon-fog.webp" alt="">
-                       </div>
-
-                       <div class="box-1-txt-2">
-                            <div class="right-txt">
-                                <p>24&deg;</p>
-                            </div>
-
-                            <div class="left-txt">
-                                <p>15&deg;</p>
-                            </div>        
-                       </div>
-                    </div>
+                <div class="cont3-box" id="forecast-cont">
+                   
 
                 </div>
             </div>
@@ -252,17 +114,18 @@
                 </div>
 
                 <select name="Select day" id="Select-day">
-                    <option value="Tuesday">Tuesday</option>
+                    <!-- <option value="Tuesday">Tuesday</option>
                     <option value="Tuesday">Wednesday</option>
                     <option value="Tuesday">Thursday</option>
                     <option value="Tuesday">Friday</option>
                     <option value="Tuesday">Saturday</option>
                     <option value="Tuesday">Sunday</option>
-                    <option value="Tuesday">Monday</option>
+                    <option value="Tuesday">Monday</option> -->
                 </select>
             </div>
 
-            <div class="sec-box">
+          <div class="row" id="hour-cont">
+              <!-- <div class="sec-box" >
                 <div class="time-txt">
                     <img src="images/icon-overcast.webp" alt="">
                     <p>3 PM</p>
@@ -348,13 +211,14 @@
                 <div class="weather-txt">
                     <p>17&deg;</p>
                 </div>
-            </div>
+            </div> -->
+          </div>
         </div>
     </main>
 
     <footer>
         <p>&copy; Copyright 2025: Web Development Group 9, NEW HORIZONS, NIG.</p>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
