@@ -1,4 +1,4 @@
-let base = "http://api.weatherapi.com/v1";
+let base = "https://api.weatherapi.com/v1";
 let ApiKey = "aaac0838429046e38af83018250810";
 
 // --- Fetch current weather ---
