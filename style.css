@@ -136,9 +136,13 @@
     main{
         display: flex;
         align-items: center;
-        padding: 2rem 12rem;
-        width: 100%;
-        gap: 20px;
+        /* padding: 2rem 12rem; */
+        /* width: 100%; */
+        max-width: 1200px;
+        margin:41px auto;
+        padding-inline: 10px;
+        gap: 30px;
+        
 
     }
 
@@ -342,7 +346,7 @@
 }
 
 /* This is Tablet design view */
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 850px) and (max-width: 1023px){
 
         body{
         background-color: rgb(242, 242, 242);
@@ -476,7 +480,9 @@
     main{
         display: flex;
         height: 700px;
-        padding: 2rem 4rem;
+        /* padding: 2rem 2rem; */
+        padding-inline: 20px;
+        margin-top: 41px;
         width: 100%;
         gap: 15px;
 
@@ -688,7 +694,7 @@
 
 }
 /* This is Mobile design view */
-@media (min-width: 430px) and (max-width: 767px){
+@media (min-width: 432px) and (max-width: 849px){
 
         body{
         background-color: rgb(242, 242, 242);
@@ -817,7 +823,8 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 2rem 2rem;
+        padding-inline: 20px;
+        margin-top: 41px;
         width: 100%;
         gap: 10px;
         padding: 0 2re;
@@ -1037,7 +1044,7 @@
 }
 
 /* This is for smaller screens view */
-@media (max-width: 393px){
+@media (max-width: 431px){
 
         body{
         background-color: rgb(242, 242, 242);
@@ -1165,7 +1172,9 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 2rem 2rem;
+        /* padding: 2rem 2rem; */
+        padding-inline: 12px;
+        margin-top: 41px;
         width: 100%;
         gap: 10px;
         padding: 0 2re;
@@ -1271,7 +1280,7 @@
 
     .cont3-box{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         width: 100%;
         gap: 7px;
     }
